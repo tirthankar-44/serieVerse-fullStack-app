@@ -12,7 +12,7 @@ function App() {
 
   const handleAllClick = () => {
     console.log("Clicked All");
-    fetch("http://localhost:3000/all")
+    fetch("https://serie-verse-full-stack-app-server.vercel.app/all")
       .then(res => res.json())
       .then(data => {
         setDisplayList(data);
@@ -30,7 +30,7 @@ function App() {
     setAnimationClicked(true);
     if(liveActionClicked) setLiveActionClicked(false);
 
-    fetch("http://localhost:3000/animation")
+    fetch("https://serie-verse-full-stack-app-server.vercel.app/animation")
       .then(res => res.json())
       .then(data => {
         setDisplayList(data);
@@ -48,7 +48,7 @@ function App() {
     setLiveActionClicked(true);
     if(animationClicked) setAnimationClicked(false);
 
-    fetch("http://localhost:3000/live-action")
+    fetch("https://serie-verse-full-stack-app-server.vercel.app/live-action")
       .then(res => res.json())
       .then(data => {
         setDisplayList(data);
@@ -65,7 +65,7 @@ function App() {
     const genre = "Action";
 
     if(animationClicked){
-      fetch(`http://localhost:3000/animation/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -73,7 +73,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else if(liveActionClicked){
-      fetch(`http://localhost:3000/live-action/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -81,7 +81,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else{
-      fetch(`http://localhost:3000/all`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/all`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data.filter(item => item.genre == "Action"));
@@ -99,7 +99,7 @@ function App() {
     const genre = "Adventure";
 
     if(animationClicked){
-      fetch(`http://localhost:3000/animation/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -107,7 +107,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else if(liveActionClicked){
-      fetch(`http://localhost:3000/live-action/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -115,7 +115,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else{
-      fetch(`http://localhost:3000/all`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/all`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data.filter(item => item.genre == "Adventure"));
@@ -133,7 +133,7 @@ function App() {
     const genre = "Comedy";
 
     if(animationClicked){
-      fetch(`http://localhost:3000/animation/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -141,7 +141,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else if(liveActionClicked){
-      fetch(`http://localhost:3000/live-action/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -149,7 +149,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else{
-      fetch(`http://localhost:3000/all`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/all`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data.filter(item => item.genre == "Comedy"));
@@ -167,7 +167,7 @@ function App() {
     const genre = "Mature";
 
     if(animationClicked){
-      fetch(`http://localhost:3000/animation/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -175,7 +175,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else if(liveActionClicked){
-      fetch(`http://localhost:3000/live-action/${genre}`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/${genre}`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data);
@@ -183,7 +183,7 @@ function App() {
         .catch(err => console.log('There was some error in fetching', err));
     }
     else{
-      fetch(`http://localhost:3000/all`)
+      fetch(`https://serie-verse-full-stack-app-server.vercel.app/all`)
         .then(res => res.json())
         .then(data => {
           setDisplayList(data.filter(item => item.genre == "Mature"));

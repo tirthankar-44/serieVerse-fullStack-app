@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+h3 {
+  padding: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  width: 70%;
+}
+
+span {
+  padding-top: 35px;
+  font-size: 40px;
+  width: 30%;
+}
+
+ul {
+  list-style: none;
+}
+
+li::marker {
+  content: none;
+  width: 0px;
+}
